@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:animateLayoutChanges="true"
-                android:clipToPadding="false"
-                android:descendantFocusability="beforeDescendants"
-                android:filterTouchesWhenObscured="true"
-                android:fitsSystemWindows="true"
-                android:focusableInTouchMode="true"
-                android:orientation="vertical"
-                tools:context="com.breadwallet.presenter.activities.HomeActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:clipToPadding="false"
+    android:descendantFocusability="beforeDescendants"
+    android:filterTouchesWhenObscured="true"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.breadwallet.presenter.activities.HomeActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="60dp"
-                android:background="@drawable/brd_logo_gradient"/>
+                android:background="@drawable/brd_logo_gradient" />
 
             <com.breadwallet.presenter.customviews.BaseTextView
                 android:id="@+id/total_assets_label"
@@ -40,7 +40,7 @@
                 android:layout_marginTop="40dp"
                 android:text="@string/HomeScreen.totalAssets"
                 android:textColor="@color/text_total_assets_label"
-                app:customTFont="CircularPro-Book.otf"/>
+                app:customTFont="CircularPro-Book.otf" />
 
             <com.breadwallet.presenter.customviews.BaseTextView
                 android:id="@+id/total_assets_usd"
@@ -51,15 +51,14 @@
                 android:layout_marginEnd="@dimen/activity_vertical_margin"
                 android:textColor="@color/white"
                 android:textSize="28sp"
-                app:customTFont="CircularPro-Bold.otf"/>
+                app:customTFont="CircularPro-Bold.otf" />
         </RelativeLayout>
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@+id/menu_table"
-            android:layout_below="@id/home_header"
-            >
+            android:layout_below="@id/home_header">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -90,18 +89,18 @@
                             android:text="@string/Prompts.PaperKey.title"
                             android:textColor="@color/almost_black"
                             android:textSize="16sp"
-                            app:customTFont="CircularPro-Bold.otf"/>
+                            app:customTFont="CircularPro-Bold.otf" />
 
                         <com.breadwallet.presenter.customviews.BaseTextView
                             android:id="@+id/prompt_description"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/prompt_title"
-                            android:textColor="@color/almost_black"
                             android:layout_marginEnd="16dp"
                             android:layout_marginStart="16dp"
                             android:text="@string/Prompts.PaperKey.body"
-                            android:textSize="14sp"/>
+                            android:textColor="@color/almost_black"
+                            android:textSize="14sp" />
 
                         <LinearLayout
                             android:id="@+id/button_container"
@@ -127,7 +126,7 @@
                                 app:buttonType="4"
                                 app:customTFont="CircularPro-Bold.otf"
                                 app:hasShadow="false"
-                                app:isBreadButton="true"/>
+                                app:isBreadButton="true" />
 
                             <com.breadwallet.presenter.customviews.BRButton
                                 android:id="@+id/continue_button"
@@ -141,7 +140,7 @@
                                 app:buttonType="4"
                                 app:customTFont="CircularPro-Bold.otf"
                                 app:hasShadow="false"
-                                app:isBreadButton="true"/>
+                                app:isBreadButton="true" />
 
                         </LinearLayout>
 
@@ -175,7 +174,7 @@
                     android:visibility="visible"
                     app:breadText="@string/Alert.noInternet"
                     app:contentInsetLeft="0dp"
-                    app:contentInsetStart="0dp"/>
+                    app:contentInsetStart="0dp" />
 
             </RelativeLayout>
 
@@ -186,7 +185,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:background="?attr/primary_background"
+            android:background="#000000"
             android:clickable="true"
             android:focusable="true"
             android:focusableInTouchMode="true"
@@ -206,14 +205,14 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_buy_cash"/>
+                        android:src="@drawable/ic_buy_cash" />
 
                     <com.breadwallet.presenter.customviews.BaseTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="@string/HomeScreen.buy"
-                        android:textColor="@color/sync_toolbar_retry_text"/>
+                        android:textColor="@color/sync_toolbar_retry_text" />
 
                 </LinearLayout>
 
@@ -228,14 +227,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:background="@drawable/ic_trade"/>
+                        android:background="@drawable/ic_trade" />
 
                     <com.breadwallet.presenter.customviews.BaseTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="@string/HomeScreen.trade"
-                        android:textColor="@color/sync_toolbar_retry_text"/>
+                        android:textColor="@color/sync_toolbar_retry_text" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -250,14 +249,14 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginBottom="4dp"
-                        android:background="@drawable/ic_menu"/>
+                        android:background="@drawable/ic_menu" />
 
                     <com.breadwallet.presenter.customviews.BaseTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="@string/HomeScreen.menu"
-                        android:textColor="@color/sync_toolbar_retry_text"/>
+                        android:textColor="@color/sync_toolbar_retry_text" />
                 </LinearLayout>
 
             </TableRow>
@@ -265,5 +264,17 @@
         </TableLayout>
 
     </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
 
 </RelativeLayout>

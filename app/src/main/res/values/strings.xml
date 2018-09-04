@@ -930,4 +930,6 @@
   <string name="WritePaperPhrase.previous">Previous</string>
   <!-- 1 of 3 -->
   <string name="WritePaperPhrase.step">%1$d of %2$d</string>
+    <string name="crypto.balance">My Crypto balance:</string>
+    <string name="enterpin">Enter PIN</string>
 </resources>
